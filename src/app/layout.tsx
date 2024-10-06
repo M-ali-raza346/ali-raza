@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/* Favicon link */}
+        {/* Favicon link  */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <title>SkinCare</title>
         <meta name="description" content="lovely and Glowing skin" />
