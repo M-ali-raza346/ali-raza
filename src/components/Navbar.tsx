@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import logoImage from '@/components/Images/Logo.png'
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="pl-8">
         <Image
-          src='/logo (2).png'
+          src={logoImage}
           alt="beauty.skin logo"
           width={272}
           height={43}
