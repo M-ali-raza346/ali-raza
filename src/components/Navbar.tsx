@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import logoImage from "@/components/images/Logo.png";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="pl-8">
         <Image
-          src={logoImage}
+          src='/logo.png'
           alt="beauty.skin logo"
           width={272}
           height={43}

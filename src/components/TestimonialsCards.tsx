@@ -1,29 +1,24 @@
 'use client';
 import { useState } from "react";
 import Image from "next/image";
-import leftArrow from "@/components/images/Group 23 .png"; // Path to left arrow image
-import rightArrow from "@/components/images/Group 22 .png"; // Path to right arrow image
-import customer1 from "@/components/images/Ellipse 4  (2) .png"; // Path to customer image 1
-import customer2 from "@/components/images/Ellipse 4  (1).png"; // Path to customer image 2
-import customer3 from "@/components/images/Ellipse 4 .png"; // Path to customer image 3
 
 const testimonials = [
   {
-    image: customer1,
+    image: "/Ellipse 4  (2) .png", // Path to customer image 1 in public folder
     quote: "A such amazing product",
     name: "James Bell",
     text: "Lorem ipsum dolor sit amet consectetur. Tortor morbi adipiscing ullamcorper et elit lobortis aliquam lorem.",
     rating: 5,
   },
   {
-    image: customer2,
+    image: "/Ellipse 4  (1).png", // Path to customer image 2 in public folder
     quote: "I feel fresh when used it",
     name: "Jacob Jones",
     text: "Lorem ipsum dolor sit amet consectetur. Tortor morbi adipiscing ullamcorper et elit lobortis aliquam lorem.",
     rating: 5,
   },
   {
-    image: customer3,
+    image: "/Ellipse 4 .png", // Path to customer image 3 in public folder
     quote: "Top product this year",
     name: "Dianne Russell",
     text: "Lorem ipsum dolor sit amet consectetur. Tortor morbi adipiscing ullamcorper et elit lobortis aliquam lorem.",
@@ -59,14 +54,24 @@ function Testimonials() {
               aria-label="Previous testimonial"
               className="focus:outline-none"
             >
-              <Image src={leftArrow} alt="Previous" width={40} height={40} />
+              <Image
+                src="/Group 23 .png" // Path to left arrow in public folder
+                alt="Previous"
+                width={40}
+                height={40}
+              />
             </button>
             <button
               onClick={handleNext}
               aria-label="Next testimonial"
               className="focus:outline-none"
             >
-              <Image src={rightArrow} alt="Next" width={40} height={40} />
+              <Image
+                src="/Group 22 .png" // Path to right arrow in public folder
+                alt="Next"
+                width={40}
+                height={40}
+              />
             </button>
           </div>
         </div>
@@ -80,7 +85,7 @@ function Testimonials() {
 
         <div className="relative">
           {/* Testimonials Cards */}
-          <div className="flex justify-center min-h-[300px]"> {/* Adjust min height */}
+          <div className="flex justify-center min-h-[300px]">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -94,10 +99,14 @@ function Testimonials() {
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
+                      width={96} // Example width for the images
+                      height={96} // Example height for the images
                       className="w-24 h-24 rounded-full"
                     />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2 mt-12">{testimonial.quote}</h3>
+                  <h3 className="font-semibold text-lg mb-2 mt-12">
+                    {testimonial.quote}
+                  </h3>
                   <p className="text-gray-500 mb-4">{testimonial.text}</p>
                   <p className="font-bold">{testimonial.name}</p>
                   <div className="flex justify-center mt-2">

@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ali-1-project",
+  title: "beauty.skin",
   description: "lovely and Glowing skin",
 };
 
