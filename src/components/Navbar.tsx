@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="pl-8">
         <Image
-          src='/logo.png'
+          src='/logo (2).png'
           alt="beauty.skin logo"
           width={272}
           height={43}
