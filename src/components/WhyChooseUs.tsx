@@ -1,11 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import sImage from "@/components/images/5.png";
-import dImage from "@/components/images/6.png";
-import fImage from "@/components/images/7.png";
-import gImage from "@/components/images/8.png";
-import hImage from "@/components/images/Rectangle 3.png";
-import productImage from "@/components/images/Group 76.png"; // Example image import
 
 const WhyChooseUs = () => {
   return (
@@ -29,9 +22,9 @@ const WhyChooseUs = () => {
           {/* Card 1 */}
           <div className="flex flex-col items-start">
             <div className="relative w-16 h-16 mb-4">
-              <Image src={hImage} alt="Background Icon" fill style={{ objectFit: "cover" }} />
-              <Image
-                src={dImage}
+              <img src="/Rectangle 3.png" alt="Background Icon" className='w-full h-full object-cover' />
+              <img
+                src="/Group 76.png" // Icon for No Side Effects
                 alt="Signature Facial Icon"
                 className="absolute inset-0 w-8 h-8 mx-auto mt-[16px]"
               />
@@ -45,9 +38,9 @@ const WhyChooseUs = () => {
           {/* Card 2 */}
           <div className="flex flex-col items-start">
             <div className="relative w-16 h-16 mb-4">
-              <Image src={hImage} alt="Background Icon" fill style={{ objectFit: "cover" }} />
-              <Image
-                src={fImage}
+              <img src="/Rectangle 3.png" alt="Background Icon" className='w-full h-full object-cover' />
+              <img
+                src="/6.png" // Icon for Vegan Friendly
                 alt="Vegan Friendly Icon"
                 className="absolute inset-0 w-8 h-8 mx-auto mt-[16px]"
               />
@@ -61,9 +54,9 @@ const WhyChooseUs = () => {
           {/* Card 3 */}
           <div className="flex flex-col items-start">
             <div className="relative w-16 h-16 mb-4">
-              <Image src={hImage} alt="Background Icon" fill style={{ objectFit: "cover" }} />
-              <Image
-                src={gImage}
+              <img src="/Rectangle 3.png" alt="Background Icon" className='w-full h-full object-cover' />
+              <img
+                src="/7.png" // Icon for Fast Delivery
                 alt="Fast Delivery Icon"
                 className="absolute inset-0 w-8 h-8 mx-auto mt-[16px]"
               />
@@ -77,9 +70,9 @@ const WhyChooseUs = () => {
           {/* Card 4 */}
           <div className="flex flex-col items-start">
             <div className="relative w-16 h-16 mb-4">
-              <Image src={hImage} alt="Background Icon" fill style={{ objectFit: "cover" }} />
-              <Image
-                src={sImage}
+              <img src="/Rectangle 3.png" alt="Background Icon" className='w-full h-full object-cover' />
+              <img
+                src="/5.png" // Icon for All Skin Types
                 alt="For All Skin Types Icon"
                 className="absolute inset-0 w-8 h-8 mx-auto mt-[16px]"
               />
@@ -93,8 +86,8 @@ const WhyChooseUs = () => {
 
         {/* Right Side (Image) */}
         <div className="w-full md:w-5/12 flex justify-center mt-8 md:mt-0">
-          <Image
-            src={productImage}
+          <img
+            src="/Group 76.png" // Product Image
             alt="Product Image"
             className="w-full h-auto object-cover"
           />

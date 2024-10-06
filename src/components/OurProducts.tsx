@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/image";
-import pImage from "@/components/images/bx-chevron-right 1.png";
-import xImage from "@/components/images/1.png";
-import cImage from "@/components/images/2.png";
-import vImage from "@/components/images/3.png";
-import bImage from "@/components/images/4.png";
 
-const productImages = [xImage, cImage, vImage, bImage]; // Array of product images
+const productImages = [
+  "/1.png",
+  "/2.png",
+  "/3.png",
+  "/4.png"
+]; // Array of product image paths
 
 const OurProducts = () => {
   return (
@@ -25,8 +24,8 @@ const OurProducts = () => {
         <div className="flex flex-row mt-10 items-center">
           <h2 className="text-3xl ml-4">New Arrivals</h2>
           <h2 className="text-3xl ml-auto mr-4">Recommended</h2>
-          <Image
-            src={pImage}
+          <img
+            src="/images/bx-chevron-right 1.png" // Use simple img tag
             alt="arrow"
             width={23}
             height={23}
@@ -40,8 +39,8 @@ const OurProducts = () => {
             .fill(null)
             .map((_, index) => (
               <div key={index} className="flex flex-col items-center">
-                <Image
-                  src={productImages[index % productImages.length]} // Alternate through the images
+                <img
+                  src={productImages[index % productImages.length]} // Simple img tag for products
                   alt="Product"
                   width={367}
                   height={400}
