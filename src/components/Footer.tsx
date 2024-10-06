@@ -1,7 +1,5 @@
 import React from "react";
-import logoImage from '@/components/images/Logo (1).png';
 import Image from "next/image";
-import lImage from '@/components/images/Line 7(1).png';
 
 const Footer = () => {
   return (
@@ -11,7 +9,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="flex flex-col space-y-4 max-w-xs">
           <Image
-            src={logoImage}
+            src="/Logo (1).png" // Path to logo image in the public folder
             alt="beauty.skin logo"
             width={200}
             height={50}
@@ -54,7 +52,7 @@ const Footer = () => {
       {/* Divider Line */}
       <div className="mt-10 mb-5">
         <Image 
-          src={lImage} 
+          src="/Line 7(1).png" // Path to line image in the public folder
           alt='divider line' 
           width={1300} 
           height={2} 

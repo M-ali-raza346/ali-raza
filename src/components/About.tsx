@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import oImage from "@/components/images/image (2).png";
 
 const About = () => {
   return (
@@ -9,7 +8,7 @@ const About = () => {
         {/* Left Section: Image */}
         <div className="w-full lg:w-[35%] mt-8 lg:mt-28 lg:ml-16 flex justify-center lg:block">
           <Image
-            src={oImage}
+            src="/image (2).png" // Path to the image in the public folder
             alt="Product Image"
             width={658}
             height={735}
